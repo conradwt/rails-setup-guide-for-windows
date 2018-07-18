@@ -92,7 +92,7 @@ cd ~/.rbenv && src/configure && make -C src
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
-source ${HOME}/.bashrc
+source $HOME/.bashrc
 
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
@@ -100,7 +100,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 7.  install all of the approved plugins RBenv plugins
 
 ```bash
-cd ${HOME}/rails-setup-guide-for-ubuntu
+cd $HOME/rails-setup-guide-for-ubuntu
 
 chmod +x install-rbenv-plugins.sh
 
@@ -128,9 +128,9 @@ rbenv rehash
 10. set the Git completion
 
 ```bash
-cp ${HOME}/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
+cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
 
-echo 'source $HOME/.git-completion.sh' >> ${HOME}/.bashrc
+echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 ```
 
 11. install Heroku Toolbelt
@@ -148,7 +148,7 @@ Note:  Skip this step if you already have an account.
 13. create Git configuration file
 
 ```
-$ cp ${HOME}/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
+$ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
 ```
 
 14. In Windows 10, install Visual Studio Code Insiders
@@ -211,9 +211,9 @@ copy `path\to\vagrant\src\.ssh` to `c:\Users\your-user-name` directory
 Finally, in Ubuntu, perform the following actions:
 
 ```bash
-chmod 700 ${HOME}/.ssh
-chmod 600 ${HOME}/id_rsa
-chmod 644 ${HOME}/id_rsa.pub
+chmod 700 $HOME/.ssh
+chmod 600 $HOME/id_rsa
+chmod 644 $HOME/id_rsa.pub
 ```
 
 $ = stuff that you type in the terminal
