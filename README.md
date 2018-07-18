@@ -215,7 +215,7 @@ $ = stuff that you type in the terminal
 
 Bug reports and feature requests can be filed for the <add project here> project here:
 
-- [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-macos/issues)
+- [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-ubuntu/issues)
 
 ## Contact
 
@@ -232,7 +232,3 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 ## Copyright
 
 &copy; Copyright 2018 Conrad Taylor. All Rights Reserved.
-
-```
-
-```
