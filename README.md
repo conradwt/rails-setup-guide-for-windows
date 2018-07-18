@@ -211,17 +211,16 @@ copy `path\to\vagrant\src\.ssh` to `c:\Users\your-user-name` directory
 Finally, in Ubuntu, perform the following actions:
 
 ```bash
-chmod 700 $HOME/.ssh
-cd ${HOME}/.ssh
-chmod 600 id_rsa
-chmod 644 id_rsa.pub
+chmod 700 ${HOME}/.ssh
+chmod 600 ${HOME}/id_rsa
+chmod 644 ${HOME}/id_rsa.pub
 ```
 
 $ = stuff that you type in the terminal
 
 ## Support
 
-Bug reports and feature requests can be filed for the <add project here> project here:
+Bug reports and feature requests can be filed here:
 
 - [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-ubuntu/issues)
 
