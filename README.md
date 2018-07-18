@@ -151,13 +151,21 @@ Note:  Skip this step if you already have an account.
 $ cp ${HOME}/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
 ```
 
-14. On Windows 10, install Visual Studio Code Insiders
+14. In Windows 10, install Visual Studio Code Insiders
 
 ```
 https://code.visualstudio.com/insiders/#win
 ```
 
-15. edit .gitconfig file
+15. create an alias for Visual Studio Code - Insiders
+
+Using an Ubuntu shell, perform the following action:
+
+```bash
+echo 'alias code="'C:\Program Files\Microsoft VS Code Insiders\bin\code.exe'"' >> ~/.bashrc
+```
+
+16. edit .gitconfig file
 
 Note: `atom` editor is being used but you can use any editor to make the
 modifications to the `.gitconfig` file.
@@ -174,7 +182,7 @@ to the text for your `name` and `e-mail` that you're using for Github.com:
     name = John Doe
     email = john.doe@example.com
 
-16. Setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
+17. Setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
 
 ```bash
 wslpath "c:\Users\your-user-name\Desktop" /mnt/c/Users/your-user-name/Desktop
@@ -186,7 +194,7 @@ ln -s /mnt/c/Users/your-user-name/firehouse $HOME/firehose
 
 Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
 
-17. copy SSH keys from Vagrant to Ubuntu (Window 10 Users Only)
+18. copy SSH keys from Vagrant to Ubuntu (Window 10 Users Only)
 
 In Vagrant, performing the following actions:
 
