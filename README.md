@@ -72,13 +72,14 @@ sudo apt-get install -y nodejs
 4.  clone this repository
 
 ```
+cd $HOME
 $ git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
 ```
 
 5.  change directory to the cloned repository
 
 ```
-$ cd path/rails-setup-guide-for-ubuntu
+$ cd rails-setup-guide-for-ubuntu
 ```
 
 6.  install and configure RBenv
@@ -154,7 +155,7 @@ $ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
 14. In Windows 10, install Visual Studio Code Insiders
 
 ```
-https://code.visualstudio.com/insiders/#win
+https://code.visualstudio.com/docs/?dv=win64&build=insiders
 ```
 
 15. create an alias for Visual Studio Code - Insiders
