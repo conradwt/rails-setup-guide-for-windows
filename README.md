@@ -69,20 +69,34 @@ curl -sL https://deb.nodesource.com/setup_10.x | bash -
 sudo apt-get install -y nodejs
 ```
 
-4.  clone this repository
+4.  In Windows 10, install Visual Studio Code Insiders
+
+```
+https://code.visualstudio.com/docs/?dv=win64&build=insiders
+```
+
+5.  create an alias for Visual Studio Code - Insiders
+
+Using an Ubuntu shell, perform the following action:
+
+```bash
+echo 'alias code="'C:\Program Files\Microsoft VS Code Insiders\bin\code.exe'"' >> ~/.bashrc
+```
+
+6.  clone this repository
 
 ```
 cd $HOME
 $ git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
 ```
 
-5.  change directory to the cloned repository
+7.  change directory to the cloned repository
 
 ```
 $ cd rails-setup-guide-for-ubuntu
 ```
 
-6.  install and configure RBenv
+8.  install and configure RBenv
 
 ```bash
 exit
@@ -98,7 +112,7 @@ source $HOME/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
-7.  install all of the approved plugins RBenv plugins
+9.  install all of the approved plugins RBenv plugins
 
 ```bash
 cd $HOME/rails-setup-guide-for-ubuntu
@@ -108,7 +122,7 @@ chmod +x install-rbenv-plugins.sh
 ./install-rbenv-plugins.sh
 ```
 
-8.  install Ruby 2.5.1
+10. install Ruby 2.5.1
 
 ```bash
 rbenv install 2.5.1
@@ -116,7 +130,7 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 ```
 
-9.  install Bundler 1.16.x and Rails 5.2.0
+11. install Bundler 1.16.x and Rails 5.2.0
 
 ```bash
 gem install bundler
@@ -126,7 +140,7 @@ gem install rails -v 5.2.0
 rbenv rehash
 ```
 
-10. set the Git completion
+12. set the Git completion
 
 ```bash
 cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
@@ -134,54 +148,53 @@ cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-comple
 echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 ```
 
-11. install Heroku Toolbelt
+13. install Heroku Toolbelt
 
 ```bash
 sudo snap install heroku --classic
 ```
 
-12. create a Github.com account
+14. create a Github.com account
 
 ```
 Note:  Skip this step if you already have an account.
 ```
 
-13. create Git configuration file
+15. create Git configuration and global files
 
 ```
 $ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
-```
-
-14. In Windows 10, install Visual Studio Code Insiders
-
-```
-https://code.visualstudio.com/docs/?dv=win64&build=insiders
-```
-
-15. create an alias for Visual Studio Code - Insiders
-
-Using an Ubuntu shell, perform the following action:
-
-```bash
-echo 'alias code="'C:\Program Files\Microsoft VS Code Insiders\bin\code.exe'"' >> ~/.bashrc
+$ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
 ```
 
 16. edit .gitconfig file
 
-Note: `atom` editor is being used but you can use any editor to make the
+Note: `code` editor is being used but you can use any editor to make the
 modifications to the `.gitconfig` file.
 
-change the text on the right side of the equal:
+- change `excludesfiles` setting:
 
-      name = <your firstname lastname>
-      email = <your e-mail address>
+  ```text
+  excludesfile = /Users/<your user name>/.gitignore_global
+  ```
 
-to the text for your `name` and `e-mail` that you're using for Github.com:
+  Note: `<your user name>` should be replaced with your actual user name within Ubuntu.
 
-    e.g.
+- change name and email address settings:
 
-    name = John Doe
-    email = john.doe@example.com
+  ```text
+  name = <your firstname lastname>
+  email = <your e-mail address>
+  ```
+
+  to the text for your `name` and `e-mail` that you're using for Github.com:
+
+  e.g.
+
+  ```text
+  name = John Doe
+  email = john.doe@example.com
+  ```
 
 17. Setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
 
