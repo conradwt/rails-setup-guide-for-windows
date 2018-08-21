@@ -254,8 +254,6 @@ chmod 600 $HOME/id_rsa
 chmod 644 $HOME/id_rsa.pub
 ```
 
-$ = stuff that you type in the terminal
-
 ## Support
 
 Bug reports and feature requests can be filed here:
