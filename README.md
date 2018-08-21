@@ -132,12 +132,12 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 ```
 
-11. install Bundler 1.16.x and Rails 5.2.0
+11. install Bundler and Rails
 
 ```bash
 gem install bundler
 
-gem install rails -v 5.2.0
+gem install rails
 
 rbenv rehash
 ```
