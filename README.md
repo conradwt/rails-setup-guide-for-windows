@@ -95,7 +95,7 @@ git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
 7.  In Ubuntu, change directory to the cloned repository
 
 ```bash
-$ cd rails-setup-guide-for-ubuntu
+cd rails-setup-guide-for-ubuntu
 ```
 
 8.  In Ubuntu, install and configure RBenv
@@ -165,8 +165,8 @@ Note:  Skip this step if you already have an account.
 15. In Ubuntu, create Git configuration and global files
 
 ```
-$ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
-$ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
+cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
+cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
 ```
 
 16. In Ubuntu, edit .gitconfig file
