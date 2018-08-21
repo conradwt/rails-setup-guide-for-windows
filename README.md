@@ -10,7 +10,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 ## Installation Steps
 
-1.  download and install general development tools
+1.  In Ubuntu, download and install general development tools
 
 ```bash
 sudo su -
@@ -40,7 +40,7 @@ apt-get update -y && apt-get install -qq -y --no-install-recommends \
  unzip
 ```
 
-2.  download, install, and configure PostreSQL 10.x
+2.  In Ubuntu, download, install, and configure PostreSQL 10.x
 
 ```bash
 apt-get --purge remove postgresql \
@@ -63,7 +63,7 @@ apt-get install postgresql-10 postgresql-client-10 -y && apt-get upgrade -y
 service postgresql start
 ```
 
-3.  download and install Node 10.x
+3.  In Ubuntu, download and install Node 10.x
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
@@ -77,7 +77,7 @@ sudo apt-get install -y nodejs
 https://code.visualstudio.com/docs/?dv=win64&build=insiders
 ```
 
-5.  create an alias for Visual Studio Code - Insiders
+5.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
 Using an Ubuntu shell, perform the following action:
 
@@ -85,20 +85,20 @@ Using an Ubuntu shell, perform the following action:
 echo 'alias code="'/mnt/c/Program Files/Microsoft VS Code Insiders/bin/code.exe'"' >> ~/.bashrc
 ```
 
-6.  clone this repository
+6.  In Ubuntu, clone this repository
 
-```
+```bash
 cd $HOME
-$ git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
+git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
 ```
 
-7.  change directory to the cloned repository
+7.  In Ubuntu, change directory to the cloned repository
 
-```
+```bash
 $ cd rails-setup-guide-for-ubuntu
 ```
 
-8.  install and configure RBenv
+8.  In Ubuntu, install and configure RBenv
 
 ```bash
 exit
@@ -114,7 +114,7 @@ source $HOME/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
-9.  install all of the approved plugins RBenv plugins
+9.  In Ubuntu, install all of the approved plugins RBenv plugins
 
 ```bash
 cd $HOME/rails-setup-guide-for-ubuntu
@@ -124,7 +124,7 @@ chmod +x install-rbenv-plugins.sh
 ./install-rbenv-plugins.sh
 ```
 
-10. install Ruby 2.5.1
+10. In Ubuntu, install Ruby 2.5.1
 
 ```bash
 rbenv install 2.5.1
@@ -132,7 +132,7 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 ```
 
-11. install Bundler and Rails
+11. In Ubuntu, install Bundler and Rails
 
 ```bash
 gem install bundler
@@ -142,7 +142,7 @@ gem install rails
 rbenv rehash
 ```
 
-12. set the Git completion
+12. In Ubuntu, set the Git completion
 
 ```bash
 cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
@@ -150,26 +150,26 @@ cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-comple
 echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 ```
 
-13. install Heroku Toolbelt
+13. In Ubuntu, install Heroku Toolbelt
 
 ```bash
 sudo snap install heroku --classic
 ```
 
-14. create a Github.com account
+14. In Ubuntu, create a Github.com account
 
 ```
 Note:  Skip this step if you already have an account.
 ```
 
-15. create Git configuration and global files
+15. In Ubuntu, create Git configuration and global files
 
 ```
 $ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
 $ cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
 ```
 
-16. edit .gitconfig file
+16. In Ubuntu, edit .gitconfig file
 
 Note: `code` editor is being used but you can use any editor to make the
 modifications to the `.gitconfig` file.
@@ -198,7 +198,7 @@ modifications to the `.gitconfig` file.
   email = john.doe@example.com
   ```
 
-17. Setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
+17. In Ubuntu, setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
 
 - path to `Desktop` directory
 
@@ -234,21 +234,19 @@ modifications to the `.gitconfig` file.
 
 Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
 
-18. copy SSH keys from Vagrant to Ubuntu (Window 10 Users Only)
-
-In Vagrant, performing the following actions:
+18. In Vagrant, copy SSH keys from Vagrant to Window 10 Pro
 
 ```bash
 cp -r $HOME/.ssh $HOME/src/.
 ```
 
-In Windows 10, perform the following actions:
+19. In Ubuntu, copy SSH keys from Windows 10 Pro to Ubuntu
 
 ```bash
-copy `path\to\vagrant\src\.ssh` to `c:\Users\your-user-name` directory
+cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
 ```
 
-Finally, in Ubuntu, perform the following actions:
+20. In Ubuntu, update the SSH permissions
 
 ```bash
 chmod 700 $HOME/.ssh
