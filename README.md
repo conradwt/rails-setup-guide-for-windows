@@ -2,11 +2,11 @@
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
 
-## Pre-Installation Steps (Window 10 Users Only)
+## Pre-Installation Steps (Window 10 Pro Users Only)
 
 https://www.hanselman.com/blog/TheYearOfLinuxOnTheWindowsDesktopWSLTipsAndTricks.aspx
 
-Note: Install Ubuntu from the Windows Store.
+Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://www.microsoft.com/en-us/p/ubuntu-1804/9n9tngvndl3q).
 
 ## Installation Steps
 
@@ -35,7 +35,9 @@ apt-get update -y && apt-get install -qq -y --no-install-recommends \
  libgdbm3 \
  libgdbm-dev \
  python-software-properties \
- snapd
+ snapd \
+ ctags \
+ unzip
 ```
 
 2.  download, install, and configure PostreSQL 10.x
@@ -80,7 +82,7 @@ https://code.visualstudio.com/docs/?dv=win64&build=insiders
 Using an Ubuntu shell, perform the following action:
 
 ```bash
-echo 'alias code="'C:\Program Files\Microsoft VS Code Insiders\bin\code.exe'"' >> ~/.bashrc
+echo 'alias code="'/mnt/c/Program Files/Microsoft VS Code Insiders/bin/code.exe'"' >> ~/.bashrc
 ```
 
 6.  clone this repository
@@ -198,13 +200,37 @@ modifications to the `.gitconfig` file.
 
 17. Setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
 
-```bash
-wslpath "c:\Users\your-user-name\Desktop" /mnt/c/Users/your-user-name/Desktop
+- path to `Desktop` directory
 
-wslpath "c:\Users\your-user-name\firehose" /mnt/c/Users/your-user-name/firehouse
+  ```bash
+  wslpath "c:\Users\your-user-name\Desktop"
+  ```
 
-ln -s /mnt/c/Users/your-user-name/firehouse $HOME/firehose
-```
+  If everything went well, it should have generated something similar to the
+  following:
+
+  ```text
+  /mnt/c/Users/your-user-name/Desktop
+  ```
+
+- path to `firehose` directory
+
+  ```bash
+  wslpath "c:\Users\your-user-name\firehose"
+  ```
+
+  If everything went well, it should have generated something similar to the
+  following:
+
+  ```text
+  /mnt/c/Users/your-user-name/firehouse
+  ```
+
+- create a symbolic link to your `firehose` directory
+
+  ```bash
+  ln -s /mnt/c/Users/your-user-name/firehouse $HOME/firehose
+  ```
 
 Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
 
