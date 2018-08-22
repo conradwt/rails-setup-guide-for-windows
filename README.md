@@ -119,9 +119,9 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```bash
 cd $HOME/rails-setup-guide-for-ubuntu
 
-chmod +x install-rbenv-plugins.sh
+chmod +x install-rbenv-plugins.bash
 
-./install-rbenv-plugins.sh
+./install-rbenv-plugins.bash
 ```
 
 10. In Ubuntu, install Ruby 2.5.1
