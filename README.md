@@ -13,9 +13,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 1.  In Ubuntu, download and install general development tools
 
 ```bash
-sudo su -
-
-apt-get update -y && apt-get install -qq -y --no-install-recommends \
+sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
  software-properties-common \
  git-core \
  build-essential \
@@ -43,24 +41,15 @@ apt-get update -y && apt-get install -qq -y --no-install-recommends \
 2.  In Ubuntu, download, install, and start PostreSQL 10.x
 
 ```bash
-apt-get --purge remove postgresql \
- postgresql-9.5 \
- postgresql-client-9.5 \
- postgresql-client-common \
- postgresql-common \
- postgresql-contrib-9.5
-
-add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main'
-
-apt-get install wget -y
-
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-
-apt-get update -y && apt-get upgrade -y
-
-apt-get install postgresql-10 postgresql-client-10 -y && apt-get upgrade -y
-
-service postgresql start
+sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main'
+sudo apt-get install wget -y
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update -y -qq && sudo apt-get upgrade -y -qq
+sudo apt-get install -y -qq \
+  libpq-dev \
+  postgresql-10 \
+  postgresql-client-10 \
+  postgresql-server-dev-10
 ```
 
 3.  In Ubuntu, set the default PostgreSQL password
@@ -113,21 +102,26 @@ service postgresql start
 Note: The password that you'll be using within your `database.yml` file
 will be `password`.
 
-4.  In Ubuntu, download and install Node 10.x
+4. In Ubuntu, start the PostgreSQL service
+
+```bash
+sudo service postgresql start
+```
+
+5. In Ubuntu, download and install Node 10.x
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
-
 sudo apt-get install -y nodejs
 ```
 
-5.  In Windows 10, install Visual Studio Code Insiders
+6.  In Windows 10, install Visual Studio Code Insiders
 
 ```
 https://code.visualstudio.com/docs/?dv=win64&build=insiders
 ```
 
-6.  In Ubuntu, create an alias for Visual Studio Code - Insiders
+7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
 Using an Ubuntu shell, perform the following action:
 
@@ -135,91 +129,80 @@ Using an Ubuntu shell, perform the following action:
 echo 'alias code="'/mnt/c/Program Files/Microsoft VS Code Insiders/bin/code.exe'"' >> ~/.bashrc
 ```
 
-7.  In Ubuntu, clone this repository
+8.  In Ubuntu, clone this repository
 
 ```bash
 cd $HOME
 git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
 ```
 
-8.  In Ubuntu, change directory to the cloned repository
+9.  In Ubuntu, change directory to the cloned repository
 
 ```bash
 cd rails-setup-guide-for-ubuntu
 ```
 
-9.  In Ubuntu, install and configure RBenv
+10. In Ubuntu, install and configure RBenv
 
 ```bash
 exit
-
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-
 cd ~/.rbenv && src/configure && make -C src
-
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-
 source $HOME/.bashrc
-
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
-10. In Ubuntu, install all of the approved plugins RBenv plugins
+11. In Ubuntu, install all of the approved plugins RBenv plugins
 
 ```bash
 cd $HOME/rails-setup-guide-for-ubuntu
-
 chmod +x install-rbenv-plugins.bash
-
 ./install-rbenv-plugins.bash
 ```
 
-11. In Ubuntu, install Ruby 2.5.1
+12. In Ubuntu, install Ruby 2.5.1
 
 ```bash
 rbenv install 2.5.1
-
 rbenv global 2.5.1
 ```
 
-12. In Ubuntu, install Bundler and Rails
+13. In Ubuntu, install Bundler and Rails
 
 ```bash
 gem install bundler
-
 gem install rails
-
 rbenv rehash
 ```
 
-13. In Ubuntu, set the Git completion
+14. In Ubuntu, set the Git completion
 
 ```bash
 cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
-
 echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 ```
 
-14. In Ubuntu, install Heroku Toolbelt
+15. In Ubuntu, install Heroku Toolbelt
 
 ```bash
 sudo snap install heroku --classic
 ```
 
-15. In Ubuntu, create a Github.com account
+16. In Ubuntu, create a Github.com account
 
 ```
 Note:  Skip this step if you already have an account.
 ```
 
-16. In Ubuntu, create Git configuration and global files
+17. In Ubuntu, create Git configuration and global files
 
 ```
 cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
 cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
 ```
 
-17. In Ubuntu, edit .gitconfig file
+18. In Ubuntu, edit .gitconfig file
 
 Note: `code` editor is being used but you can use any editor to make the
 modifications to the `.gitconfig` file.
@@ -248,7 +231,7 @@ modifications to the `.gitconfig` file.
   email = john.doe@example.com
   ```
 
-18. In Ubuntu, setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
+19. In Ubuntu, setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
 
 - path to `Desktop` directory
 
@@ -284,19 +267,19 @@ modifications to the `.gitconfig` file.
 
 Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
 
-19. In Vagrant, copy SSH keys from Vagrant to Window 10 Pro
+20. In Vagrant, copy SSH keys from Vagrant to Window 10 Pro
 
 ```bash
 cp -r $HOME/.ssh $HOME/src/.
 ```
 
-20. In Ubuntu, copy SSH keys from Windows 10 Pro to Ubuntu
+21. In Ubuntu, copy SSH keys from Windows 10 Pro to Ubuntu
 
 ```bash
 cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
 ```
 
-21. In Ubuntu, update the SSH permissions
+22. In Ubuntu, update the SSH permissions
 
 ```bash
 chmod 700 $HOME/.ssh
