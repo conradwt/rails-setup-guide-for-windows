@@ -143,7 +143,6 @@ cd rails-setup-guide-for-ubuntu
 10. In Ubuntu, install and configure RBenv
 
 ```bash
-exit
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
