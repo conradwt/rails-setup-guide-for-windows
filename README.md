@@ -33,7 +33,6 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
  libgdbm3 \
  libgdbm-dev \
  python-software-properties \
- snapd \
  ctags \
  unzip
 ```
