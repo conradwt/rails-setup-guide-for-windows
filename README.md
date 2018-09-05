@@ -186,7 +186,7 @@ echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 15. In Ubuntu, install Heroku Toolbelt
 
 ```bash
-sudo snap install heroku --classic
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 ```
 
 16. In Ubuntu, create a Github.com account
