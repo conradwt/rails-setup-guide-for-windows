@@ -14,27 +14,34 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 ```bash
 sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
- software-properties-common \
- git-core \
- build-essential \
- imagemagick \
- libmagick++-6-headers \
- libcurl3-dev \
- locales \
- nodejs \
- autoconf \
- bison \
- libssl-dev \
- libyaml-dev \
- libreadline6-dev \
- zlib1g-dev \
- libncurses5-dev \
- libffi-dev \
- libgdbm3 \
- libgdbm-dev \
- python-software-properties \
- ctags \
- unzip
+  autoconf \
+  bash \
+  bash-completion \
+  bison \
+  build-essential \
+  ctags \
+  git-core \
+  imagemagick \
+  libcurl3-dev \
+  libffi-dev \
+  libgdbm-dev \
+  libgdbm3 \
+  libmagick++-6-headers \
+  libncurses5-dev \
+  libpq-dev \
+  libreadline6-dev \
+  libssl-dev \
+  libyaml-dev \
+  locales \
+  nodejs \
+  postgresql-10 \
+  postgresql-client-10 \
+  postgresql-server-dev-10 \
+  python-software-properties \
+  sudo \
+  unzip \
+  yarn \
+  zlib1g-dev
 ```
 
 2.  In Ubuntu, download, install, and start PostreSQL 10.x
