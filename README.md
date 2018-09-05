@@ -126,7 +126,7 @@ https://code.visualstudio.com/docs/?dv=win64&build=insiders
 Using an Ubuntu shell, perform the following action:
 
 ```bash
-echo 'alias code="'/mnt/c/Program Files/Microsoft VS Code Insiders/bin/code.exe'"' >> ~/.bashrc
+echo 'alias code="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
 ```
 
 8.  In Ubuntu, clone this repository
