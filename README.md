@@ -242,7 +242,7 @@ cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
 
 Note: change your `your-user-name` to the one being used on Windows.
 
-21. In Ubuntu, update the SSH permissions
+21. In Ubuntu, update the SSH files' permissions
 
 ```bash
 chmod 700 $HOME/.ssh
