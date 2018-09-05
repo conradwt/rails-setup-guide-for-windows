@@ -228,55 +228,21 @@ modifications to the `.gitconfig` file.
   email = john.doe@example.com
   ```
 
-19. In Ubuntu, setup sharable directories between Windows and Ubuntu (Window 10 Users Only)
-
-- path to `Desktop` directory
-
-  ```bash
-  wslpath "c:\Users\your-user-name\Desktop"
-  ```
-
-  If everything went well, it should have generated something similar to the
-  following:
-
-  ```text
-  /mnt/c/Users/your-user-name/Desktop
-  ```
-
-- path to `firehose` directory
-
-  ```bash
-  wslpath "c:\Users\your-user-name\firehose"
-  ```
-
-  If everything went well, it should have generated something similar to the
-  following:
-
-  ```text
-  /mnt/c/Users/your-user-name/firehouse
-  ```
-
-- create a symbolic link to your `firehose` directory
-
-  ```bash
-  ln -s /mnt/c/Users/your-user-name/firehouse $HOME/firehose
-  ```
-
-Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
-
-20. In Vagrant, copy SSH keys to the Windows 10 Pro shared directory
+19. In Vagrant, copy SSH keys to the Windows 10 Pro shared directory
 
 ```bash
 cp -r $HOME/.ssh $HOME/src/.
 ```
 
-21. In Ubuntu, copy SSH keys from Windows 10 Pro shared directory to Ubuntu
+20. In Ubuntu, copy SSH keys from Windows 10 Pro shared directory to Ubuntu
 
 ```bash
 cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
 ```
 
-22. In Ubuntu, update the SSH permissions
+Note: change your `your-user-name` to the one being used on Windows.
+
+21. In Ubuntu, update the SSH permissions
 
 ```bash
 chmod 700 $HOME/.ssh
