@@ -123,8 +123,6 @@ https://code.visualstudio.com/docs/?dv=win64&build=insiders
 
 7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
-Using an Ubuntu shell, perform the following action:
-
 ```bash
 echo 'alias code="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
 ```
