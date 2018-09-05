@@ -264,13 +264,13 @@ modifications to the `.gitconfig` file.
 
 Note: change your `your-user-name` to the one being used on Windows and Ubuntu.
 
-20. In Vagrant, copy SSH keys to the shared directory
+20. In Vagrant, copy SSH keys to the Windows 10 Pro shared directory
 
 ```bash
 cp -r $HOME/.ssh $HOME/src/.
 ```
 
-21. In Ubuntu, copy SSH keys from Windows 10 Pro to Ubuntu
+21. In Ubuntu, copy SSH keys from Windows 10 Pro shared directory to Ubuntu
 
 ```bash
 cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
