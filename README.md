@@ -123,15 +123,36 @@ sudo apt-get install -y nodejs
 
 6.  In Windows, install Visual Studio Code Insiders
 
-```
-https://code.visualstudio.com/docs/?dv=win64&build=insiders
-```
+- Windows
 
-7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
+  ```text
+  https://code.visualstudio.com/docs/?dv=win64&build=insiders
+  ```
 
-```bash
-echo 'alias code="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
-```
+- Ubuntu
+
+  ```bash
+  curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+  sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+  sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+  sudo apt-get install apt-transport-https
+  sudo apt-get update
+  sudo apt-get install code-insiders
+  ```
+
+7.  Create an alias for Visual Studio Code - Insiders
+
+- Windows
+
+  ```bash
+  echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
+  ```
+
+- Ubuntu
+
+  ```bash
+  echo 'alias c="code-insiders"' >> ~/.bashrc
+  ```
 
 8.  In Ubuntu, clone this repository
 
