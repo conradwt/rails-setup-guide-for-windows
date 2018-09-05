@@ -44,7 +44,7 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   zlib1g-dev
 ```
 
-2.  In Ubuntu, download, install, and start PostreSQL 10.x
+2.  In Ubuntu, download and install PostreSQL 10.x
 
 ```bash
 sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main'
@@ -58,7 +58,13 @@ sudo apt-get install -y -qq \
   postgresql-server-dev-10
 ```
 
-3.  In Ubuntu, set the default PostgreSQL password
+3. In Ubuntu, start the PostgreSQL 10.x
+
+```bash
+sudo service postgresql start
+```
+
+4.  In Ubuntu, set the default PostgreSQL password
 
 - login into the `postgres` account
 
@@ -107,12 +113,6 @@ sudo apt-get install -y -qq \
 
 Note: The password that you'll be using within your `database.yml` file
 will be `password`.
-
-4. In Ubuntu, start the PostgreSQL service
-
-```bash
-sudo service postgresql start
-```
 
 5. In Ubuntu, download and install Node 10.x
 
