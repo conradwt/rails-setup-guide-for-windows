@@ -25,7 +25,7 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   libcurl3-dev \
   libffi-dev \
   libgdbm-dev \
-  libgdbm3 \
+  libgdbm5 \
   libmagick++-6-headers \
   libncurses5-dev \
   libreadline6-dev \
@@ -34,7 +34,7 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   locales \
   lsb-release \
   nodejs \
-  python-software-properties \
+  software-properties-common \
   sudo \
   unzip \
   yarn \
