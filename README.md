@@ -20,6 +20,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       bison \
       build-essential \
       ctags \
+      curl \
       git-core \
       imagemagick \
       libcurl3-dev \
