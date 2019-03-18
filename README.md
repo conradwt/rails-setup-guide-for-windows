@@ -44,7 +44,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 2.  In Ubuntu, download and install PostreSQL 11.x
 
     ```bash
-    sudo apt-get update && apt-get install -y gnupg2 wget
+    sudo apt-get update && sudo apt-get install -y gnupg2 wget
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
     sudo apt-get update -y -qq && sudo apt-get upgrade -y -qq
     sudo apt-get install -y -qq \
