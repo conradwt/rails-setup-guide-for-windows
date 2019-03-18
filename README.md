@@ -33,6 +33,7 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   libssl-dev \
   libyaml-dev \
   locales \
+  lsb-release \
   nodejs \
   postgresql-10 \
   postgresql-client-10 \
@@ -47,18 +48,17 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
 2.  In Ubuntu, download and install PostreSQL 10.x
 
 ```bash
-sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main'
-sudo apt-get install wget -y
+sudo apt-get update && apt-get install -y gnupg2 wget
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update -y -qq && sudo apt-get upgrade -y -qq
 sudo apt-get install -y -qq \
   libpq-dev \
-  postgresql-10 \
-  postgresql-client-10 \
-  postgresql-server-dev-10
+  postgresql-11 \
+  postgresql-client-11 \
+  postgresql-server-dev-11
 ```
 
-3. In Ubuntu, start the PostgreSQL 10.x
+3. In Ubuntu, start the PostgreSQL 11.x
 
 ```bash
 sudo service postgresql start
@@ -81,8 +81,8 @@ sudo service postgresql start
   If everything went successful, one should see something similar to the following:
 
   ```text
-  postgres@6d0d30345e56:~$ psql
-  psql (10.5 (Ubuntu 10.5-1.pgdg16.04+1))
+  postgres@e343a9c5cf2e:~$ psql
+  psql (11.2 (Ubuntu 11.2-1.pgdg18.04+1))
   Type "help" for help.
 
   postgres=#
@@ -185,11 +185,11 @@ chmod +x install-rbenv-plugins.bash
 ./install-rbenv-plugins.bash
 ```
 
-12. In Ubuntu, install Ruby 2.5.1
+12. In Ubuntu, install Ruby 2.5.3
 
 ```bash
-rbenv install 2.5.1
-rbenv global 2.5.1
+rbenv install 2.5.3
+rbenv global 2.5.3
 ```
 
 13. In Ubuntu, install Bundler and Rails
@@ -197,6 +197,7 @@ rbenv global 2.5.1
 ```bash
 gem install bundler
 gem install rails
+gem install rubocop
 rbenv rehash
 ```
 
@@ -255,19 +256,35 @@ modifications to the `.gitconfig` file.
   email = john.doe@example.com
   ```
 
-19. In Vagrant, copy SSH keys to the Windows 10 Pro shared directory
+19. Copy SSH keys from Vagrant, Codenvy, or other environment to the following directory:
 
-```bash
-cp -r $HOME/.ssh $HOME/src/.
-```
+- Windows
 
-20. In Ubuntu, copy SSH keys from Windows 10 Pro shared directory to Ubuntu
+  ```bash
+  /mnt/c/Users/your-user-name/.ssh
+  ```
+
+- Ubuntu
+
+  ```bash
+  $HOME/.ssh
+  ```
+
+20. In Ubuntu, copy SSH keys from Windows 10 shared directory to Ubuntu
+
+- Windows
 
 ```bash
 cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
 ```
 
 Note: change your `your-user-name` to the one being used on Windows.
+
+- Ubuntu
+
+```text
+N/A
+```
 
 21. In Ubuntu, update the SSH files' permissions
 
