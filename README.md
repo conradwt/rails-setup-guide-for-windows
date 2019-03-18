@@ -60,6 +60,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       postgresql-11 \
       postgresql-client-11 \
       postgresql-server-dev-11
+    sudo sed -i 's/#fsync = on/fsync = off/' /etc/postgresql/11/main/postgresql.conf
     ```
 
 3.  In Ubuntu, start the PostgreSQL 11.x
