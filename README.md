@@ -121,13 +121,13 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     sudo apt-get update -y && sudo apt-get install -y nodejs
     ```
 
-6.  Install Visual Studio Code Insiders
+6.  In Windows, install Visual Studio Code Insiders
 
     ```text
     https://code.visualstudio.com/docs/?dv=win64&build=insiders
     ```
 
-7.  Create an alias for Visual Studio Code - Insiders
+7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
     ```bash
     echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
@@ -219,23 +219,23 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
       Note: `<your user name>` should be replaced with your actual user name within Ubuntu.
 
-- change name and email address settings:
+    - change name and email address settings:
 
-  ```text
-  name = <your firstname lastname>
-  email = <your e-mail address>
-  ```
+      ```text
+      name = <your firstname lastname>
+      email = <your e-mail address>
+      ```
 
-  to the text for your `name` and `e-mail` that you're using for Github.com:
+      to the text for your `name` and `e-mail` that you're using for Github.com:
 
-  e.g.
+      e.g.
 
-  ```text
-  name = John Doe
-  email = john.doe@example.com
-  ```
+      ```text
+      name = John Doe
+      email = john.doe@example.com
+      ```
 
-19. Copy SSH keys from Vagrant, Codenvy, or other environment to the following directory:
+19. In Ubuntu, copy SSH keys from Vagrant, Codenvy, or other environment to the following directory:
 
     ```bash
     /mnt/c/Users/your-user-name/.ssh
