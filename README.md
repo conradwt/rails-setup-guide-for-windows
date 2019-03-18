@@ -241,16 +241,17 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       email = john.doe@example.com
       ```
 
-19. In Ubuntu, copy SSH keys from Vagrant, Codenvy, or other environment to the following directory:
+19. In Ubuntu, copy SSH keys from Vagrant, Codenvy, or other environment to the following shared directory:
 
     ```bash
+    mkdir -p /mnt/c/Users/your-user-name/.ssh
     /mnt/c/Users/your-user-name/.ssh
     ```
 
 20. In Ubuntu, copy SSH keys from Windows 10 shared directory to Ubuntu
 
     ```bash
-    cp -r /mnt/c/Users/your-user-name/vagrant/src/.ssh $HOME
+    cp -r /mnt/c/Users/your-user-name/.ssh $HOME
     ```
 
     Note: change your `your-user-name` to the one being used on Windows.
