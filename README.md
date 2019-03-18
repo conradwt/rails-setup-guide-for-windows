@@ -154,7 +154,7 @@ sudo apt-get install -y nodejs
 
 ```bash
 cd $HOME
-git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
+git clone https://github.com/conradwt/rails-setup-guide-for-windows
 ```
 
 9.  In Ubuntu, change directory to the cloned repository
@@ -176,7 +176,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 11. In Ubuntu, install all of the approved plugins RBenv plugins
 
 ```bash
-cd $HOME/rails-setup-guide-for-ubuntu
+cd $HOME/rails-setup-guide-for-windows
 chmod +x install-rbenv-plugins.bash
 ./install-rbenv-plugins.bash
 ```
@@ -200,7 +200,7 @@ rbenv rehash
 14. In Ubuntu, set the Git completion
 
 ```bash
-cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
+cp $HOME/rails-setup-guide-for-windows/sample.git-completion.sh $HOME/.git-completion.sh
 echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
 ```
 
@@ -219,8 +219,8 @@ Note:  Skip this step if you already have an account.
 17. In Ubuntu, create Git configuration and global files
 
 ```
-cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
-cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
+cp $HOME/rails-setup-guide-for-windows/sample.gitconfig ~/.gitconfig
+cp $HOME/rails-setup-guide-for-windows/sample.gitignore_global ~/.gitignore_global
 ```
 
 18. In Ubuntu, edit .gitconfig file
