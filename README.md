@@ -115,7 +115,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     ```bash
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    sudo apt-get update -y && sudo apt-get install -y nodejs
     ```
 
 6.  Install Visual Studio Code Insiders
