@@ -2,7 +2,13 @@
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
 
-## Pre-Installation Steps (Window 10 Users Only)
+## Software Requirements
+
+- Windows 10 or later
+
+- 16 GB RAM minimum
+
+## Pre-Installation Steps
 
 [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
