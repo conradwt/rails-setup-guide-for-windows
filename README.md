@@ -1,10 +1,10 @@
-# Rails Setup Guide For Ubuntu
+# Rails Setup Guide For Windows
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
 
 ## Software Requirements
 
-- Windows 10 or later
+- Windows build 16215 or later
 
 - 16 GB RAM minimum
 
