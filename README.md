@@ -2,7 +2,7 @@
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
 
-## Pre-Installation Steps (Window 10 Pro Users Only)
+## Pre-Installation Steps (Window 10 Users Only)
 
 https://www.hanselman.com/blog/TheYearOfLinuxOnTheWindowsDesktopWSLTipsAndTricks.aspx
 
