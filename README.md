@@ -140,7 +140,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 9.  In Ubuntu, change directory to the cloned repository
 
     ```bash
-    cd rails-setup-guide-for-ubuntu
+    cd rails-setup-guide-for-windows
     ```
 
 10. In Ubuntu, install and configure RBenv
