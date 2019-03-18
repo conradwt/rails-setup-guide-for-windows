@@ -47,6 +47,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ```bash
     sudo apt-get update && sudo apt-get install -y gnupg2 wget
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+    sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
     sudo apt-get update -y -qq && sudo apt-get upgrade -y -qq
     sudo apt-get install -y -qq \
       libpq-dev \
@@ -60,6 +61,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ```bash
     sudo service postgresql start
     ```
+    
+    Note: You’ll need perform this step everytime you boot or reboot your machine.
 
 4.  In Ubuntu, set the default PostgreSQL password
 
