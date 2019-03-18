@@ -61,7 +61,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ```bash
     sudo service postgresql start
     ```
-    
+
     Note: You’ll need perform this step everytime you boot or reboot your machine.
 
 4.  In Ubuntu, set the default PostgreSQL password
@@ -256,6 +256,12 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     chmod 600 $HOME/id_rsa
     chmod 644 $HOME/id_rsa.pub
     ```
+
+22. Sign up for Windows Insiders Program. (Optional)
+
+    [Windows Insiders Program](https://insider.windows.com)
+
+    Note: This step is for the adventurous but you'll get to experiment and play with pre-releases of Windows.
 
 ## Support
 
