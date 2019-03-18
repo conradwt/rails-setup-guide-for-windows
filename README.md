@@ -28,16 +28,12 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   libgdbm3 \
   libmagick++-6-headers \
   libncurses5-dev \
-  libpq-dev \
   libreadline6-dev \
   libssl-dev \
   libyaml-dev \
   locales \
   lsb-release \
   nodejs \
-  postgresql-10 \
-  postgresql-client-10 \
-  postgresql-server-dev-10 \
   python-software-properties \
   sudo \
   unzip \
@@ -45,7 +41,7 @@ sudo apt-get update -y && sudo apt-get install -qq -y --no-install-recommends \
   zlib1g-dev
 ```
 
-2.  In Ubuntu, download and install PostreSQL 10.x
+2.  In Ubuntu, download and install PostreSQL 11.x
 
 ```bash
 sudo apt-get update && apt-get install -y gnupg2 wget
