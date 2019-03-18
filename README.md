@@ -274,7 +274,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 Bug reports and feature requests can be filed here:
 
-- [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-ubuntu/issues)
+- [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-windows/issues)
 
 ## Contact
 
