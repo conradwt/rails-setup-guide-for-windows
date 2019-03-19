@@ -131,9 +131,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 6.  In Windows, install Visual Studio Code Insiders
 
-    ```text
-    https://code.visualstudio.com/docs/?dv=win64&build=insiders
-    ```
+    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
 
 7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
