@@ -41,6 +41,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       locales \
       lsb-release \
       nodejs \
+      openssh-server \
       software-properties-common \
       sudo \
       unzip \
