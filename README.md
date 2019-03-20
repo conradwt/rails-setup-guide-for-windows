@@ -214,7 +214,11 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 18. In Ubuntu, edit .gitconfig file
 
-    Note: `code` editor is being used but you can use any editor to make the
+    ```bash
+    c ~/.gitconfig
+    ```
+
+    Note: `c` editor is being used but you can use any editor to make the
     modifications to the `.gitconfig` file.
 
     - change `excludesfiles` setting:
@@ -225,7 +229,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
       Note: `<your user name>` should be replaced with your actual user name within Ubuntu.
 
-    - change name and email address settings:
+    - change name and email address settings
 
       ```text
       name = <your firstname lastname>
