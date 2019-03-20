@@ -266,9 +266,11 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       
         Note: Please select Linux link at the top of the page.
       
-      - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+20. Add SSH public key to Github
 
-20. Sign up for Windows Insiders Program. (Optional)
+    [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) 
+
+21. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
