@@ -136,7 +136,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
     ```bash
-    echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code.exe'"' >> ~/.bashrc
+    echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code-insiders'"' >> ~/.bashrc
     ```
 
 8.  In Ubuntu, clone this repository
