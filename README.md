@@ -160,6 +160,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
     source $HOME/.bashrc
     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    source $HOME/.bashrc
     ```
 
 11. In Ubuntu, install all of the approved plugins RBenv plugins
