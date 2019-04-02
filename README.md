@@ -221,7 +221,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global core.excludesfile ~/.gitignore_global
       ```
 
-    - change name and email address for Github accound
+    - change name and email address for Github account
 
       e.g.
 
