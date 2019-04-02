@@ -215,67 +215,52 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 18. In Ubuntu, edit .gitconfig file
 
-    ```bash
-    c ~/.gitconfig
-    ```
-
-    Note: `c` editor is being used but you can use any editor to make the
-    modifications to the `.gitconfig` file.
-
     - change `excludesfiles` setting:
 
-      ```text
-      excludesfile = /Users/<your user name>/.gitignore_global
+      ```bash
+      git config --global core.excludesfile ~/.gitignore_global
       ```
 
-      Note: `<your user name>` should be replaced with your actual user name within Ubuntu.
-
-    - change name and email address settings
-
-      ```text
-      name = <your firstname lastname>
-      email = <your e-mail address>
-      ```
-
-      to the text for your `name` and `e-mail` that you're using for Github.com:
+    - change name and email address for Github accound
 
       e.g.
 
-      ```text
-      name = John Doe
-      email = john.doe@example.com
+      ```bash
+      git config --global user.name "John Doe"
+      git config --global user.email johndoe@example.com
       ```
 
-19. In Ubuntu, create and/or setup SSH keys
+19) In Ubuntu, create and/or setup SSH keys
 
     - have existing ssh keys
 
       - create SSH folder in home directory
 
-          ```bash
-           mkdir -p $HOME/.ssh
-          ```
-          
+        ```bash
+         mkdir -p $HOME/.ssh
+        ```
+
       - copy your SSH keys to the above folder
-      
+
       - set permissions
-    
+
         ```bash
         chmod 700 $HOME/.ssh
         chmod 600 $HOME/id_rsa
         chmod 644 $HOME/id_rsa.pub
         ```
+
     - doesn't have existing ssh keys
-    
+
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-      
+
         Note: Please select Linux link at the top of the page.
-      
-20. Add SSH public key to Github
 
-    [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) 
+20) Add SSH public key to Github
 
-21. Sign up for Windows Insiders Program. (Optional)
+    [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+
+21) Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 

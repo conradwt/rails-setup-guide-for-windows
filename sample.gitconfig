@@ -27,10 +27,10 @@
 
 [color]
   ui = true
-  
+
 [color "diff"]
   whitespace = red reverse
-  
+
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/<your user name>/.gitignore_global
@@ -48,7 +48,7 @@
   # lg = log --oneline --decorate
   # gr = log --graph --oneline --decorate
   # undo = reset --hard
-  
+
   st = status
   ci = commit
   co = checkout
@@ -86,9 +86,6 @@
   ra = !git r --all
   l = "!. ~/.githelpers && pretty_git_log"
   la = !git l --all
-    
-[user]
-	name = <Firstname Lastname>
-	email = <e-mail address>
+
 [push]
 	default = simple
