@@ -215,7 +215,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
 18. In Ubuntu, edit .gitconfig file
 
-    - change `excludesfiles` setting:
+    - change `excludesfile` setting:
 
       ```bash
       git config --global core.excludesfile ~/.gitignore_global
