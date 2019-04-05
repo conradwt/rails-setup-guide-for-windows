@@ -156,6 +156,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    sudo chmod go-w $HOME/.rbenv
     cd ~/.rbenv && src/configure && make -C src
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
     source $HOME/.bashrc
