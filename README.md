@@ -182,7 +182,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 13. In Ubuntu, install Bundler and Rails
 
     ```bash
-    gem install bundler
+    gem install bundler -v=1.17.3
     gem install rails
     gem install rubocop
     rbenv rehash
