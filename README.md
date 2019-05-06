@@ -231,9 +231,9 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global user.email johndoe@example.com
       ```
 
-19) In Ubuntu, create and/or setup SSH keys
+19. create and/or setup SSH keys
 
-    - have existing ssh keys
+    - if you have SSH keys
 
       - create SSH folder in home directory
 
@@ -251,17 +251,27 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
         chmod 644 $HOME/id_rsa.pub
         ```
 
-    - doesn't have existing ssh keys
+    - if you don't have SSH keys
 
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-        Note: Please select Linux link at the top of the page.
+        Note: Please select Mac link at the top of the page.
 
-20) Add SSH public key to Github
+20. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-21) Sign up for Windows Insiders Program. (Optional)
+21. in Terminal.app, set the terminal
+
+    ```bash
+    cp sample.terminal $HOME/.
+    ```
+
+22. in the Terminal.app, testing your SSH connection
+
+    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
+
+23. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
