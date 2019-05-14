@@ -215,13 +215,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-21. in Terminal.app, set the terminal
-
-    ```bash
-    cp sample.terminal $HOME/.
-    ```
-
-22. Sign up for Windows Insiders Program. (Optional)
+21. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
