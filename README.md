@@ -72,87 +72,37 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     Note: You’ll need perform this step everytime you boot or reboot your machine.
 
-4.  In Ubuntu, set the default PostgreSQL password
-
-    - login into the `postgres` account
-
-      ```bash
-      sudo su - postgres
-      ```
-
-    - start the `psql` client application
-
-      ```bash
-      psql
-      ```
-
-      If everything went successful, one should see something similar to the following:
-
-      ```text
-      postgres@e343a9c5cf2e:~$ psql
-      psql (11.2 (Ubuntu 11.2-1.pgdg18.04+1))
-      Type "help" for help.
-
-      postgres=#
-      ```
-
-    - change the PostgreSQL password by typing the following into the prompt and hitting the enter key:
-
-      ```text
-      \password
-      ```
-
-    - enter `password` for `Enter new password:` prompt.
-
-    - enter `password` for `Enter it again:` prompt.
-
-    - exit `psql` prompt by typing the following into the prompt and hitting the
-      enter key:
-
-      ```text
-      \q
-      ```
-
-    - exit `postgres` account by typing the following:
-
-      ```bash
-      exit
-      ```
-
-    Note: The password that you'll be using within your `database.yml` file
-    will be `password`.
-
-5.  In Ubuntu, download and install Node 11.x
+4.  In Ubuntu, download and install Node 11.x
 
     ```bash
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
     sudo apt-get update -y && sudo apt-get install -y nodejs
     ```
 
-6.  In Windows, install Visual Studio Code Insiders
+5.  In Windows, install Visual Studio Code Insiders
 
     [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
 
-7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
+6.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
     ```bash
     echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code-insiders'"' >> ~/.bashrc
     ```
 
-8.  In Ubuntu, clone this repository
+7.  In Ubuntu, clone this repository
 
     ```bash
     cd $HOME
     git clone https://github.com/conradwt/rails-setup-guide-for-windows
     ```
 
-9.  In Ubuntu, change directory to the cloned repository
+8.  In Ubuntu, change directory to the cloned repository
 
     ```bash
     cd rails-setup-guide-for-windows
     ```
 
-10. In Ubuntu, install and configure RBenv
+9.  In Ubuntu, install and configure RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -164,7 +114,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     source $HOME/.bashrc
     ```
 
-11. In Ubuntu, install all of the approved plugins RBenv plugins
+10. In Ubuntu, install all of the approved plugins RBenv plugins
 
     ```bash
     cd $HOME/rails-setup-guide-for-windows
@@ -172,14 +122,14 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ./install-rbenv-plugins.bash
     ```
 
-12. In Ubuntu, install Ruby 2.6.2
+11. In Ubuntu, install Ruby 2.6.2
 
     ```bash
     rbenv install 2.6.2
     rbenv global 2.6.2
     ```
 
-13. In Ubuntu, install Bundler and Rails
+12. In Ubuntu, install Bundler and Rails
 
     ```bash
     gem install bundler -v=1.17.3
@@ -188,33 +138,33 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     rbenv rehash
     ```
 
-14. In Ubuntu, set the Git completion
+13. In Ubuntu, set the Git completion
 
     ```bash
     cp $HOME/rails-setup-guide-for-windows/sample.git-completion.sh $HOME/.git-completion.sh
     echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
     ```
 
-15. In Ubuntu, install Heroku Toolbelt
+14. In Ubuntu, install Heroku Toolbelt
 
     ```bash
     curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     ```
 
-16. In Ubuntu, create a Github.com account
+15. In Ubuntu, create a Github.com account
 
     ```
     Note:  Skip this step if you already have an account.
     ```
 
-17. In Ubuntu, create Git configuration and global files
+16. In Ubuntu, create Git configuration and global files
 
     ```
     cp $HOME/rails-setup-guide-for-windows/sample.gitconfig ~/.gitconfig
     cp $HOME/rails-setup-guide-for-windows/sample.gitignore_global ~/.gitignore_global
     ```
 
-18. In Ubuntu, edit .gitconfig file
+17. In Ubuntu, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -231,7 +181,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global user.email johndoe@example.com
       ```
 
-19. create and/or setup SSH keys
+18. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -257,9 +207,13 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
         Note: Please select Mac link at the top of the page.
 
-20. Add SSH public key to Github
+19. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+
+20. in the Terminal.app, testing your SSH connection
+
+    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
 21. in Terminal.app, set the terminal
 
@@ -267,11 +221,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     cp sample.terminal $HOME/.
     ```
 
-22. in the Terminal.app, testing your SSH connection
-
-    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
-
-23. Sign up for Windows Insiders Program. (Optional)
+22. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
