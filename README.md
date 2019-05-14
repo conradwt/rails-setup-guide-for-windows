@@ -211,7 +211,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-20. in the Terminal.app, testing your SSH connection
+20. In Ubuntu, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
