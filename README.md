@@ -197,8 +197,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
         ```bash
         chmod 700 $HOME/.ssh
-        chmod 600 $HOME/id_rsa
-        chmod 644 $HOME/id_rsa.pub
+        chmod 600 $HOME/.ssh/id_rsa
+        chmod 644 $HOME/.ssh/id_rsa.pub
         ```
 
     - if you don't have SSH keys
