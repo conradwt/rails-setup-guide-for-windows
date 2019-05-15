@@ -122,11 +122,11 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ./install-rbenv-plugins.bash
     ```
 
-11. In Ubuntu, install Ruby 2.6.2
+11. In Ubuntu, install Ruby
 
     ```bash
-    rbenv install 2.6.2
-    rbenv global 2.6.2
+    rbenv install 2.6.3
+    rbenv global 2.6.3
     ```
 
 12. In Ubuntu, install Bundler and Rails
