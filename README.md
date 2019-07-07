@@ -44,6 +44,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       openssh-server \
       software-properties-common \
       sudo \
+      tree \
       unzip \
       yarn \
       zlib1g-dev
@@ -179,6 +180,12 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       ```bash
       git config --global user.name "John Doe"
       git config --global user.email johndoe@example.com
+      ```
+
+    - use Unix-style line endings (LF) for uploads
+
+      ```bash
+      git config --global core.autocrlf input
       ```
 
 18. create and/or setup SSH keys
