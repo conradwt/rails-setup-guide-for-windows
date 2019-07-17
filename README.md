@@ -224,6 +224,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ```bash
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     sudo npm install -g spaceship-prompt
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
