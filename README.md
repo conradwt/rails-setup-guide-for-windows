@@ -236,7 +236,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     mkdir -p $HOME/.zsh/completions
     cd $HOME/.zsh/completions
-    cp $HOME/rails-setup-guide-for-windows/sample._hub $HOME/.zsh/completions
+    cp $HOME/rails-setup-guide-for-windows/sample._hub $HOME/.zsh/completions/_hub
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
