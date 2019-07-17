@@ -219,11 +219,11 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-20. In Ubuntu, install Oh My ZSH
+20. In Ubuntu, install Oh My ZSH and associated Spaceship theme
 
     ```bash
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    npm install -g spaceship-prompt
+    sudo npm install -g spaceship-prompt
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
