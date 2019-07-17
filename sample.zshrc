@@ -85,13 +85,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-export PATH=/usr/local/heroku/bin:${PATH}
-export PATH=${HOME}/bin:${PATH}
-
-# To use these certificates with OpenSSL:
-export SSL_CERT_FILE=/opt/local/share/curl/curl-ca-bundle.crt
-
 source ${HOME}/.zshrc.d/aliases.zsh
 source ${HOME}/.zshrc.d/code-insiders.zsh
 source ${HOME}/.zshrc.d/git.zsh
