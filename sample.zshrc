@@ -115,7 +115,8 @@ source ${HOME}/.zshrc.d/rbenv.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-fpath=($fpath "$HOME/.zfunctions")
+fpath=($fpath "$HOME/.zfunctions" ~/.zsh/completions)
+autoload -U compinit && compinit
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
