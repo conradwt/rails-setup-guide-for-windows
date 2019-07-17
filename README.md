@@ -51,7 +51,15 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       zsh
     ```
 
-2.  In Ubuntu, download and install PostreSQL 11.x
+2.  In Ubuntu, install Github Hub
+
+    ```bash
+    sudo add-apt-repository ppa:cpick/hub
+    sudo apt-get update
+    sudo apt-get install hub
+    ```
+
+3.  In Ubuntu, download and install PostreSQL 11.x
 
     ```bash
     sudo apt-get update && sudo apt-get install -y gnupg2 wget
@@ -66,7 +74,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     sudo sed -i 's/#fsync = on/fsync = off/' /etc/postgresql/11/main/postgresql.conf
     ```
 
-3.  In Ubuntu, start the PostgreSQL 11.x
+4.  In Ubuntu, start the PostgreSQL 11.x
 
     ```bash
     sudo service postgresql start
@@ -74,7 +82,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     Note: You’ll need perform this step everytime you boot or reboot your machine.
 
-4.  In Ubuntu, download and install Node and Yarn
+5.  In Ubuntu, download and install Node and Yarn
 
     ```bash
     curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -84,30 +92,30 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     sudo apt-get update && sudo apt-get install -y yarn
     ```
 
-5.  In Windows, install Visual Studio Code Insiders
+6.  In Windows, install Visual Studio Code Insiders
 
     [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
 
-6.  In Ubuntu, create an alias for Visual Studio Code - Insiders
+7.  In Ubuntu, create an alias for Visual Studio Code - Insiders
 
     ```bash
     echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code-insiders'"' >> ~/.bashrc
     ```
 
-7.  In Ubuntu, clone this repository
+8.  In Ubuntu, clone this repository
 
     ```bash
     cd $HOME
     git clone https://github.com/conradwt/rails-setup-guide-for-windows
     ```
 
-8.  In Ubuntu, change directory to the cloned repository
+9.  In Ubuntu, change directory to the cloned repository
 
     ```bash
     cd rails-setup-guide-for-windows
     ```
 
-9.  In Ubuntu, install and configure RBenv
+10. In Ubuntu, install and configure RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -119,7 +127,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     source $HOME/.bashrc
     ```
 
-10. In Ubuntu, install all of the approved plugins RBenv plugins
+11. In Ubuntu, install all of the approved plugins RBenv plugins
 
     ```bash
     cd $HOME/rails-setup-guide-for-windows
@@ -127,14 +135,14 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ./install-rbenv-plugins.bash
     ```
 
-11. In Ubuntu, install Ruby
+12. In Ubuntu, install Ruby
 
     ```bash
     rbenv install 2.6.3
     rbenv global 2.6.3
     ```
 
-12. In Ubuntu, install Bundler and Rails
+13. In Ubuntu, install Bundler and Rails
 
     ```bash
     gem install bundler -v=1.17.3
@@ -143,26 +151,26 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     rbenv rehash
     ```
 
-13. In Ubuntu, install Heroku Toolbelt
+14. In Ubuntu, install Heroku Toolbelt
 
     ```bash
     curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     ```
 
-14. In Ubuntu, create a Github.com account
+15. In Ubuntu, create a Github.com account
 
     ```
     Note:  Skip this step if you already have an account.
     ```
 
-15. In Ubuntu, create Git configuration and global files
+16. In Ubuntu, create Git configuration and global files
 
     ```
     cp $HOME/rails-setup-guide-for-windows/sample.gitconfig ~/.gitconfig
     cp $HOME/rails-setup-guide-for-windows/sample.gitignore_global ~/.gitignore_global
     ```
 
-16. In Ubuntu, edit .gitconfig file
+17. In Ubuntu, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -185,7 +193,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global core.autocrlf input
       ```
 
-17. create and/or setup SSH keys
+18. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -211,15 +219,15 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
         Note: Please select Link link at the top of the page. On step 4, type `enter or return` key.
 
-18. Add SSH public key to Github
+19. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-19. In Ubuntu, testing your SSH connection
+20. In Ubuntu, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-20. In Ubuntu, install Oh My ZSH and associated Spaceship theme
+21. In Ubuntu, install Oh My ZSH and associated Spaceship theme
 
     ```bash
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -229,7 +237,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
-21. Sign up for Windows Insiders Program. (Optional)
+22. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
