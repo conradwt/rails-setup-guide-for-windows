@@ -143,33 +143,26 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     rbenv rehash
     ```
 
-13. In Ubuntu, set the Git completion
-
-    ```bash
-    cp $HOME/rails-setup-guide-for-windows/sample.git-completion.sh $HOME/.git-completion.sh
-    echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
-    ```
-
-14. In Ubuntu, install Heroku Toolbelt
+13. In Ubuntu, install Heroku Toolbelt
 
     ```bash
     curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     ```
 
-15. In Ubuntu, create a Github.com account
+14. In Ubuntu, create a Github.com account
 
     ```
     Note:  Skip this step if you already have an account.
     ```
 
-16. In Ubuntu, create Git configuration and global files
+15. In Ubuntu, create Git configuration and global files
 
     ```
     cp $HOME/rails-setup-guide-for-windows/sample.gitconfig ~/.gitconfig
     cp $HOME/rails-setup-guide-for-windows/sample.gitignore_global ~/.gitignore_global
     ```
 
-17. In Ubuntu, edit .gitconfig file
+16. In Ubuntu, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -192,7 +185,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global core.autocrlf input
       ```
 
-18. create and/or setup SSH keys
+17. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -218,15 +211,15 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
         Note: Please select Link link at the top of the page. On step 4, type `enter or return` key.
 
-19. Add SSH public key to Github
+18. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-20. In Ubuntu, testing your SSH connection
+19. In Ubuntu, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-21. In Ubuntu, install Oh My ZSH
+20. In Ubuntu, install Oh My ZSH
 
     ```bash
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -234,7 +227,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
-22. Sign up for Windows Insiders Program. (Optional)
+21. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
