@@ -27,6 +27,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       build-essential \
       ctags \
       curl \
+      fonts-powerline \
       git-core \
       imagemagick \
       libcurl3-dev \
@@ -40,14 +41,14 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       libyaml-dev \
       locales \
       lsb-release \
-      nodejs \
       openssh-server \
+      powerline \
       software-properties-common \
       sudo \
       tree \
       unzip \
-      yarn \
-      zlib1g-dev
+      zlib1g-dev \
+      zsh
     ```
 
 2.  In Ubuntu, download and install PostreSQL 11.x
@@ -73,11 +74,14 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     Note: You’ll need perform this step everytime you boot or reboot your machine.
 
-4.  In Ubuntu, download and install Node 11.x
+4.  In Ubuntu, download and install Node and Yarn
 
     ```bash
-    curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     sudo apt-get update -y && sudo apt-get install -y nodejs
+    curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt-get update && sudo apt-get install -y yarn
     ```
 
 5.  In Windows, install Visual Studio Code Insiders
@@ -212,7 +216,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-        Note: Please select Mac link at the top of the page.
+        Note: Please select Link link at the top of the page. On step 4, type `enter or return` key.
 
 19. Add SSH public key to Github
 
@@ -222,7 +226,15 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-21. Sign up for Windows Insiders Program. (Optional)
+21. In Ubuntu, install Oh My ZSH
+
+    ```bash
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    npm install -g spaceship-prompt
+    cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
+    ```
+
+22. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
