@@ -237,6 +237,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     mkdir -p $HOME/.zsh/completions
     cd $HOME/.zsh/completions
     cp $HOME/rails-setup-guide-for-windows/sample._hub $HOME/.zsh/completions/_hub
+    cp -r $HOME/rails-setup-guide-for-windows/.zshrc.d ~/.
     cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
     ```
 
