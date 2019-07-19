@@ -264,11 +264,3 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 ## Copyright
 
 &copy; Copyright 2018 - 2019 Conrad Taylor. All Rights Reserved.
-
-```
-cd $HOME/rails-setup-guide-for-windows
-git pull
-cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
-```
-
-After you complete the above commands, open a new terminal and let me know if this did the job.
