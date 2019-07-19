@@ -117,7 +117,3 @@ source ${HOME}/.zshrc.d/rbenv.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 fpath=($fpath "$HOME/.zfunctions" ~/.zsh/completions)
 autoload -U compinit && compinit
-
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
