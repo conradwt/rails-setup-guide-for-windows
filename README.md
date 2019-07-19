@@ -104,43 +104,20 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 7.  In Ubuntu, change directory to the cloned repository
 
     ```bash
-    cd rails-setup-guide-for-windows
+    cd $HOME/rails-setup-guide-for-windows
     ```
 
-8.  In Ubuntu, install Oh My ZSH
-
-    ```bash
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    sudo chmod -R g-w,o-w ~/.oh-my-zsh
-    sudo chown -R $USER /usr/local
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    mkdir -p $HOME/.zsh/completions
-    cp $HOME/rails-setup-guide-for-windows/sample._hub $HOME/.zsh/completions/_hub
-    sudo chmod +x $HOME/.zsh/completions/_hub
-    cp -r $HOME/rails-setup-guide-for-windows/.zshrc.d ~/.
-    cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
-    ```
-
-9.  In Windows, install Visual Studio Code Insiders
-
-    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
-
-10. In Ubuntu, create an alias for Visual Studio Code - Insiders
-
-    ```bash
-    echo 'alias c="'/mnt/c/Program\ Files/Microsoft\ VS\ Code\ Insiders/bin/code-insiders'"' >> ~/.bashrc
-    ```
-
-11. In Ubuntu, install and configure RBenv
+8.  In Ubuntu, install and configure RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     sudo chmod go-w $HOME/.rbenv
     cd ~/.rbenv && src/configure && make -C src
+    export PATH=${HOME}/.rbenv/bin:${PATH}
+    eval "$(rbenv init -)"
     ```
 
-12. In Ubuntu, install all of the approved plugins RBenv plugins
+9.  In Ubuntu, install all of the approved plugins RBenv plugins
 
     ```bash
     cd $HOME/rails-setup-guide-for-windows
@@ -148,14 +125,14 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     ./install-rbenv-plugins.bash
     ```
 
-13. In Ubuntu, install Ruby
+10. In Ubuntu, install Ruby
 
     ```bash
     rbenv install 2.6.3
     rbenv global 2.6.3
     ```
 
-14. In Ubuntu, install Bundler and Rails
+11. In Ubuntu, install Bundler and Rails
 
     ```bash
     gem install bundler -v=1.17.3
@@ -164,26 +141,46 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     rbenv rehash
     ```
 
-15. In Ubuntu, install Heroku Toolbelt
+12. In Ubuntu, install Oh My ZSH
+
+    ```bash
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sudo chmod -R g-w,o-w ~/.oh-my-zsh
+    sudo chown -R $USER /usr/local
+    sudo chmod -R g-w,o-w /usr/local
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    mkdir -p $HOME/.zsh/completions
+    curl https://github.com/github/hub/blob/master/etc/hub.zsh_completion >  ~/.zsh/completions/_hub
+    sudo chmod +x $HOME/.zsh/completions/_hub
+    cp -r $HOME/rails-setup-guide-for-windows/.zshrc.d ~/.
+    cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
+    ```
+
+13. In Windows, install Visual Studio Code Insiders
+
+    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
+
+14. In Ubuntu, install Heroku Toolbelt
 
     ```bash
     curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     ```
 
-16. In Ubuntu, create a Github.com account
+15. In Ubuntu, create a Github.com account
 
     ```
     Note:  Skip this step if you already have an account.
     ```
 
-17. In Ubuntu, create Git configuration and global files
+16. In Ubuntu, create Git configuration and global files
 
     ```
     cp $HOME/rails-setup-guide-for-windows/sample.gitconfig ~/.gitconfig
     cp $HOME/rails-setup-guide-for-windows/sample.gitignore_global ~/.gitignore_global
     ```
 
-18. In Ubuntu, edit .gitconfig file
+17. In Ubuntu, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -206,7 +203,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       git config --global core.autocrlf input
       ```
 
-19. create and/or setup SSH keys
+18. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -232,15 +229,15 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
         Note: Please select Link link at the top of the page. On step 4, type `enter or return` key.
 
-20. Add SSH public key to Github
+19. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-21. In Ubuntu, testing your SSH connection
+20. In Ubuntu, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-22. Sign up for Windows Insiders Program. (Optional)
+21. Sign up for Windows Insiders Program. (Optional)
 
     [Windows Insiders Program](https://insider.windows.com)
 
@@ -267,3 +264,11 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 ## Copyright
 
 &copy; Copyright 2018 - 2019 Conrad Taylor. All Rights Reserved.
+
+```
+cd $HOME/rails-setup-guide-for-windows
+git pull
+cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
+```
+
+After you complete the above commands, open a new terminal and let me know if this did the job.

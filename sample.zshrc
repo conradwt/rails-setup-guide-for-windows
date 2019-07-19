@@ -72,7 +72,6 @@ ENABLE_CORRECTION="true"
 plugins=(
   git \
   node \
-  rails \
   ruby \
   vscode \
   z \
@@ -115,5 +114,5 @@ source ${HOME}/.zshrc.d/rbenv.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-fpath=($fpath "$HOME/.zfunctions" ~/.zsh/completions)
+fpath=($fpath ~/.zsh/completions)
 autoload -U compinit && compinit
