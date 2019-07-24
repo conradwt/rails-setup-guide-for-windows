@@ -181,10 +181,11 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     rbenv global 2.6.3
     ```
 
-12. In Ubuntu, install Bundler and Rails
+12. In Ubuntu, install Ruby gem dependencies
 
     ```bash
-    gem install bundler -v=1.17.3
+    gem update --system
+    gem install bundler
     gem install rails
     gem install rubocop
     rbenv rehash
