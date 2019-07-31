@@ -29,6 +29,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       curl \
       fonts-powerline \
       git-core \
+      gnupg2 \
       imagemagick \
       libcurl3-dev \
       libffi-dev \
@@ -47,6 +48,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       sudo \
       tree \
       unzip \
+      wget \
       zlib1g-dev \
       zsh
     ```
@@ -62,7 +64,6 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 3.  In Ubuntu, download and install PostreSQL 11.x
 
     ```bash
-    sudo apt-get update && sudo apt-get install -y gnupg2 wget
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
     sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
     sudo apt-get update -y -qq && sudo apt-get upgrade -y -qq
@@ -139,7 +140,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt-get update && sudo apt-get install -y yarn
-    mkdir "${HOME}/.npm-packages"
+    mkdir -p "${HOME}/.npm-packages"
     npm config set prefix "${HOME}/.npm-packages"
     ```
 
@@ -160,7 +161,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-    sudo chmod go-w $HOME/.rbenv
+    chmod -R go-w $HOME/.rbenv
     cd ~/.rbenv && src/configure && make -C src
     export PATH=${HOME}/.rbenv/bin:${PATH}
     eval "$(rbenv init -)"
@@ -198,6 +199,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     sudo chmod -R g-w,o-w ~/.oh-my-zsh
     sudo chown -R $USER /usr/local
     sudo chmod -R g-w,o-w /usr/local
+    npm install -g spaceship-prompt
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     mkdir -p $HOME/.zsh/completions
