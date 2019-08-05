@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 source ${HOME}/.zshrc.d/aliases.zsh
 source ${HOME}/.zshrc.d/code-insiders.zsh
 source ${HOME}/.zshrc.d/git.zsh
-source ${HOME}/.zshrc.d/node.zsh
+source ${HOME}/.zshrc.d/npm.zsh
 source ${HOME}/.zshrc.d/postgresql.zsh
 source ${HOME}/.zshrc.d/rbenv.zsh
 
