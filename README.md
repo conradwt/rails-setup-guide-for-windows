@@ -142,6 +142,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     sudo apt-get update && sudo apt-get install -y yarn
     mkdir -p "${HOME}/.npm-packages"
     npm config set prefix "${HOME}/.npm-packages"
+    NPM_PACKAGES="${HOME}/.npm-packages"
+    export PATH="$NPM_PACKAGES/bin:$PATH"
     ```
 
 7.  In Ubuntu, clone this repository
