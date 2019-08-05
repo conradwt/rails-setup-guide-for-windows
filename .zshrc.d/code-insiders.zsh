@@ -20,3 +20,4 @@ export DISPLAY=:0.0
 
 # set Visual Studio Code aliases.
 alias c='code-insiders'
+alias code='code-insiders'
