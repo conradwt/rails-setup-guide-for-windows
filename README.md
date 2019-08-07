@@ -30,6 +30,7 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
       fonts-powerline \
       git-core \
       gnupg2 \
+      htop \
       imagemagick \
       libcurl3-dev \
       libffi-dev \
@@ -191,6 +192,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
     gem install bundler
     gem install rails
     gem install rubocop
+    gem install solargraph
+    gem install ruby-debug-ide
     rbenv rehash
     ```
 
