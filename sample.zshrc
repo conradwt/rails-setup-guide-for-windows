@@ -120,11 +120,9 @@ autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 prompt spaceship
 
-#Change ls colours
+# Change ls colours
 LS_COLORS="ow=01;36;40" && export LS_COLORS
 
-#make cd use the ls colours
+# Make cd use the ls colours
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
-autoload -Uz compinit
-compinit
-
+autoload -Uz compinit && compinit
