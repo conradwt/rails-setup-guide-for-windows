@@ -24,14 +24,12 @@ code-insiders --install-extension humao.rest-client
 code-insiders --install-extension kumar-harsh.graphql-for-vscode
 code-insiders --install-extension mikestead.dotenv
 code-insiders --install-extension misogi.ruby-rubocop
-code-insiders --install-extension ms-python.python
 code-insiders --install-extension ms-vscode-remote.remote-containers
 code-insiders --install-extension ms-vscode-remote.remote-ssh
 code-insiders --install-extension ms-vscode-remote.remote-ssh-edit
 code-insiders --install-extension ms-vscode-remote.remote-ssh-explorer
 code-insiders --install-extension ms-vscode-remote.remote-wsl
 code-insiders --install-extension ms-vscode-remote.vscode-remote-extensionpack
-code-insiders --install-extension ms-vscode.cpptools
 code-insiders --install-extension ms-vsliveshare.vsliveshare
 code-insiders --install-extension msjsdiag.debugger-for-chrome
 code-insiders --install-extension noku.rails-run-spec-vscode

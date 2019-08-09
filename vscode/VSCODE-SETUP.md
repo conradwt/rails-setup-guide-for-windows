@@ -45,14 +45,12 @@ VSCode - Insiders
     kumar-harsh.graphql-for-vscode
     mikestead.dotenv
     misogi.ruby-rubocop
-    ms-python.python
     ms-vscode-remote.remote-containers
     ms-vscode-remote.remote-ssh
     ms-vscode-remote.remote-ssh-edit
     ms-vscode-remote.remote-ssh-explorer
     ms-vscode-remote.remote-wsl
     ms-vscode-remote.vscode-remote-extensionpack
-    ms-vscode.cpptools
     ms-vsliveshare.vsliveshare
     msjsdiag.debugger-for-chrome
     noku.rails-run-spec-vscode
