@@ -18,6 +18,64 @@ VSCode - Insiders
     ./vscode-extensions.zsh
     ```
 
+    if the above doesn't work for you, one can manually install the extensions via VS Code:
+
+    ```text
+    angryobject.react-pure-to-class-vscode
+    apollographql.vscode-apollo
+    be5invis.vscode-custom-css
+    benvp.vscode-hex-pm-intellisense
+    bungcip.better-toml
+    burkeholland.react-food-truck
+    burkeholland.simple-react-snippets
+    capaj.vscode-exports-autocomplete
+    castwide.solargraph
+    christian-kohler.npm-intellisense
+    DavidAnson.vscode-markdownlint
+    dbaeumer.vscode-eslint
+    docsmsft.docs-markdown
+    eamodio.gitlens
+    eg2.vscode-npm-script
+    Equinusocio.vsc-material-theme
+    esbenp.prettier-vscode
+    GitHub.vscode-pull-request-github
+    gottfired.css2react
+    hiro-sun.vscode-emacs
+    humao.rest-client
+    kumar-harsh.graphql-for-vscode
+    mikestead.dotenv
+    misogi.ruby-rubocop
+    ms-python.python
+    ms-vscode-remote.remote-containers
+    ms-vscode-remote.remote-ssh
+    ms-vscode-remote.remote-ssh-edit
+    ms-vscode-remote.remote-ssh-explorer
+    ms-vscode-remote.remote-wsl
+    ms-vscode-remote.vscode-remote-extensionpack
+    ms-vscode.cpptools
+    ms-vsliveshare.vsliveshare
+    msjsdiag.debugger-for-chrome
+    noku.rails-run-spec-vscode
+    Orta.vscode-jest
+    pflannery.vscode-versionlens
+    PKief.material-icon-theme
+    Prisma.vscode-graphql
+    rebornix.ruby
+    redhat.vscode-yaml
+    robinbentley.sass-indented
+    sdras.night-owl
+    Shan.code-settings-sync
+    sidthesloth.html5-boilerplate
+    streetsidesoftware.code-spell-checker
+    VisualStudioExptTeam.vscodeintellicode
+    vscode-icons-team.vscode-icons
+    wesbos.theme-cobalt2
+    wix.vscode-import-cost
+    xabikos.JavaScriptSnippets
+    xabikos.ReactSnippets
+
+    ```
+
 3.  In Ubuntu, setup Settings
 
     ```zsh
