@@ -18,7 +18,7 @@ VSCode - Insiders
     ./vscode-extensions.zsh
     ```
 
-    if the above doesn't work for you, one can manually install the extensions via VS Code:
+    if the above doesn't work for you, one can manually install the extensions via VS Code - Insiders:
 
     ```text
     angryobject.react-pure-to-class-vscode
