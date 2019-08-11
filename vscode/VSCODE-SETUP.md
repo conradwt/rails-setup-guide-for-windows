@@ -63,26 +63,30 @@ VSCode - Insiders
 
     ```
 
-3.  In Ubuntu, setup Settings
+3.  In VSCode - Insiders, setup Settings
 
-    ```zsh
-    cp settings.json %APPDATA%\Code\User\settings.json ??
-    ```
+    a.  open settings
 
     ```text
-    Note: Depending on your platform, the user settings file is located here:
-
-    Windows %APPDATA%\Code\User\settings.json
-    macOS $HOME/Library/Application Support/Code/User/settings.json
-    Linux $HOME/.config/Code/User/settings.json
+    Control ,
     ```
+
+    b.  click `Open Settings (JSON)`
+
+    c.  replace the contents of (b) with the contents of the following file:
+
+        ```text
+        $HOME/rails-setup-guide-for-windows/vscode/settings.json
+        ```
 
 4.  Configure `Settings Sync`
 
     https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 
+    Note:  We can go through this step during a future mentor session.
+
 5.  Add editor styles
 
     ```zsh
-    cp $HOME/rails-setup-guide-for-windows/vscode/sample.vscodestyles.css ????
+    cp $HOME/rails-setup-guide-for-windows/vscode/sample.vscodestyles.css /mnt/c/users/<windows-username>/.vscodestyles.css
     ```
