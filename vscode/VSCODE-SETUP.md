@@ -85,7 +85,7 @@ VSCode - Insiders
 
     Note:  We can go through this step during a future mentor session.
 
-5.  Add editor styles
+5.  In Ubuntu, add editor styles
 
     ```zsh
     cp $HOME/rails-setup-guide-for-windows/vscode/sample.vscodestyles.css /mnt/c/users/<windows-username>/.vscodestyles.css
