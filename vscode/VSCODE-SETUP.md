@@ -8,17 +8,7 @@ VSCode - Insiders
 
 1.  Exit VS Code - Insiders
 
-2.  In Ubuntu, install VS Code Extensions
-
-    ```zsh
-    cd rails-setup-guide-for-windows
-    git pull
-    cd vscode
-    chmod +x vscode-extensions.zsh
-    ./vscode-extensions.zsh
-    ```
-
-    if the above doesn't work for you, one can manually install the extensions via VS Code - Insiders:
+2.  In VSCode, install VS Code Extensions
 
     ```text
     angryobject.react-pure-to-class-vscode
