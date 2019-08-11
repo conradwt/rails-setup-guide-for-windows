@@ -76,7 +76,7 @@ VSCode - Insiders
     c.  replace the contents of (b) with the contents of the following file:
 
         ```text
-        $HOME/rails-setup-guide-for-windows/vscode/settings.json
+        https://raw.githubusercontent.com/conradwt/rails-setup-guide-for-windows/master/vscode/settings.json
         ```
 
 4.  Configure `Settings Sync`
