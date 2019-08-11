@@ -45,7 +45,7 @@
   "sync.quietSync": true,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
-  "terminal.integrated.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Fira Code, Monaco, Menlo, 'Courier New', monospace",
   "terminal.integrated.fontSize": 19,
   "terminal.integrated.shell.windows": "/usr/bin/zsh",
   "window.zoomLevel": 0,
