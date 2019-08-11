@@ -95,4 +95,4 @@ VSCode - Insiders
 
 ## Have Questions
 
-If you have any questions regarding these instructions, please let me know at your earliest by send me a message on Slack.
+If you have any questions regarding these instructions, please let me know at your earliest by sending me a message on Slack.
