@@ -30,7 +30,6 @@ VSCode - Insiders
     code-insiders --install-extension esbenp.prettier-vscode
     code-insiders --install-extension GitHub.vscode-pull-request-github
     code-insiders --install-extension gottfired.css2react
-    code-insiders --install-extension hiro-sun.vscode-emacs
     code-insiders --install-extension humao.rest-client
     code-insiders --install-extension kumar-harsh.graphql-for-vscode
     code-insiders --install-extension mikestead.dotenv
