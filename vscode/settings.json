@@ -33,7 +33,7 @@
   },
   "ruby.format": "rubocop",
   "ruby.rubocop.configFilePath": "",
-  "ruby.rubocop.executePath": "/home/<username>/.rbenv/shims/",
+  "ruby.rubocop.executePath": "/home/<ubuntu-username>/.rbenv/shims/",
   "ruby.rubocop.onSave": true,
   "sync.askGistName": false,
   "sync.autoDownload": false,
@@ -55,7 +55,7 @@
   "editor.wordWrap": "on",
   "prettier.singleQuote": true,
   "vscode_custom_css.imports": [
-    "/mnt/c/Users/<username>/.vscodestyles.css"
+    "/mnt/c/Users/<windows-username>/.vscodestyles.css"
   ],
   "workbench.iconTheme": "material-icon-theme",
   "editor.suggestSelection": "first",
