@@ -79,6 +79,8 @@ VSCode - Insiders
         https://raw.githubusercontent.com/conradwt/rails-setup-guide-for-windows/master/vscode/settings.json
         ```
 
+    d.  update lines 36 and 58 to use the correct <ubuntu username> and <windows-username> respectively.
+
 4.  Configure `Settings Sync`
 
     https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
@@ -90,3 +92,7 @@ VSCode - Insiders
     ```zsh
     cp $HOME/rails-setup-guide-for-windows/vscode/sample.vscodestyles.css /mnt/c/users/<windows-username>/.vscodestyles.css
     ```
+
+## Have Questions
+
+If you have any questions regarding these instructions, please let me know at your earliest by send me a message on Slack.
