@@ -55,9 +55,9 @@
   "editor.wordWrap": "on",
   "prettier.singleQuote": true,
   "vscode_custom_css.imports": [
-    "/home/<username>/.vscodestyles.css"
+    "/mnt/c/Users/<username>/.vscodestyles.css"
   ],
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Cobalt2",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
