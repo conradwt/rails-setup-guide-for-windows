@@ -4,7 +4,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Software Requirements
 
-- Windows build 16215 or later
+- Windows Pro 10 Version 1903 (OS Build 18362.10013) or later
 
 - 16 GB RAM minimum
 
