@@ -1,0 +1,8 @@
+
+## Files to exclude
+Dockerfile.rails-ubuntu-16.04
+Dockerfile.rails-ubuntu-18.04
+LOCAL-TESTING.md
+RESOURCES.md
+RUBOCOP.md
+rubocop.bat
