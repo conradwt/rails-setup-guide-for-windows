@@ -1,0 +1,75 @@
+FROM ubuntu:16.04
+LABEL maintainer="Conrad Taylor <conradwt@gmail.com>"
+
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+
+RUN apt-get update -qq -y
+RUN apt-get install -qq -y software-properties-common 
+RUN add-apt-repository \
+  'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' && \
+  apt-get install wget -y && \
+  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+
+RUN apt-get update -qq -y
+RUN apt-get install -qq -y curl gnupg
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+
+RUN apt-get update -y && apt-get install -qq -y --no-install-recommends \
+  autoconf \
+  bash \
+  bash-completion \
+  bison \
+  build-essential \
+  ctags \
+  git-core \
+  imagemagick \
+  libcurl3-dev \
+  libffi-dev \
+  libgdbm-dev \
+  libgdbm3 \
+  libmagick++-6-headers \
+  libncurses5-dev \
+  libpq-dev \
+  libreadline6-dev \
+  libssl-dev \
+  libyaml-dev \
+  locales \
+  nodejs \
+  postgresql-10 \ 
+  postgresql-client-10 \
+  postgresql-server-dev-10 \
+  python-software-properties \
+  sudo \
+  unzip \
+  yarn \
+  zlib1g-dev
+
+RUN service postgresql start
+
+RUN useradd -m -s /bin/bash -G sudo ruser
+RUN echo "ruser:ruser" | chpasswd
+USER ruser
+WORKDIR /home/ruser
+
+RUN \
+  cd $HOME && \
+  git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu && \
+  cd rails-setup-guide-for-ubuntu && \
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv && \
+  cd ~/.rbenv && src/configure && make -C src && \
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && \
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc && \
+  /bin/bash -c "source $HOME/.bashrc" && \
+  chmod +x $HOME/rails-setup-guide-for-ubuntu/install-rbenv-plugins.bash && \
+  $HOME/rails-setup-guide-for-ubuntu/install-rbenv-plugins.bash
+
+RUN \
+  /bin/bash -c "$HOME/.rbenv/bin/rbenv install 2.5.1" && \
+  /bin/bash -c "$HOME/.rbenv/bin/rbenv global 2.5.1"
+
+RUN \
+  $HOME/.rbenv/shims/gem install bundler rails
+
+CMD [ "/bin/bash" ]

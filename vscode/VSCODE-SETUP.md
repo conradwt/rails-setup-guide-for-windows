@@ -1,8 +1,9 @@
 # VSCode Setup
 
-## Software Requirement
+## Software Requirements
 
-VSCode - Insiders
+- Windows Pro 10 Version 1903 or later
+- VSCode - Insiders
 
 ## Steps
 
@@ -63,29 +64,31 @@ VSCode - Insiders
 
     ```
 
+    Note: You can copy all the above lines and past it into a Powershell terminal.
+
 3.  In VSCode - Insiders, setup Settings
 
-    a.  open settings
+    a. open settings
 
     ```text
     Control ,
     ```
 
-    b.  click `Open Settings (JSON)`
+    b. click `Open Settings (JSON)`
 
-    c.  replace the contents of (b) with the contents of the following file:
+    c. replace the contents of (b) with the contents of the following file:
 
         ```text
         https://raw.githubusercontent.com/conradwt/rails-setup-guide-for-windows/master/vscode/settings.json
         ```
 
-    d.  update lines 36 and 58 to use the correct <ubuntu username> and <windows-username> respectively.
+    d. update lines 36 and 58 to use the correct <ubuntu username> and <windows-username> respectively.
 
 4.  Configure `Settings Sync`
 
     https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 
-    Note:  We can go through this step during a future mentor session.
+    Note: We can go through this step during a future mentor session.
 
 5.  In Ubuntu, add editor styles
 
