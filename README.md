@@ -174,8 +174,8 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
     ```bash
     cd $HOME/rails-setup-guide-for-windows
-    chmod +x install-rbenv-plugins.bash
-    ./install-rbenv-plugins.bash
+    chmod +x install-rbenv-plugins.zsh
+    ./install-rbenv-plugins.zsh
     ```
 
 11. In Ubuntu, install Ruby
