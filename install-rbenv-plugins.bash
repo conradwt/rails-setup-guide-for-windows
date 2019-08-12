@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/zsh
 
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone git://github.com/tpope/rbenv-ctags.git ~/.rbenv/plugins/rbenv-ctags
