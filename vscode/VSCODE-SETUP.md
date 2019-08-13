@@ -78,7 +78,7 @@
 
         https://raw.githubusercontent.com/conradwt/rails-setup-guide-for-windows/master/vscode/settings.json
 
-    d. update lines 36 and 58 to use the correct <ubuntu username> and <windows-username> respectively.
+    d. update lines 36 and 58 to use the correct <ubuntu-username> and <windows-username> respectively.
 
 4.  Configure `Settings Sync`
 
