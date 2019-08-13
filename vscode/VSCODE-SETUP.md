@@ -76,9 +76,7 @@
 
     c. replace the contents of (b) with the contents of the following file:
 
-        ```text
         https://raw.githubusercontent.com/conradwt/rails-setup-guide-for-windows/master/vscode/settings.json
-        ```
 
     d. update lines 36 and 58 to use the correct <ubuntu username> and <windows-username> respectively.
 
@@ -92,6 +90,18 @@
 
     ```zsh
     cp $HOME/rails-setup-guide-for-windows/vscode/sample.vscodestyles.css /mnt/c/users/<windows-username>/.vscodestyles.css
+    ```
+
+6.  In Powershell (as administrator), install the Chocolatey:
+
+    ```powershell
+    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    ```
+
+7.  In Powershell (as administrator), install Fira Code font:
+
+    ```powershell
+    choco install firacode
     ```
 
 ## Have Questions
