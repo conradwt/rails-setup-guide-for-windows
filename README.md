@@ -252,7 +252,13 @@ Note: Install Ubuntu 18.04 from the Windows Store using the link [here](https://
 
       ```bash
       git config --global user.name "John Doe"
-      git config --global user.email johndoe@example.com
+      git config --global user.email "johndoe@example.com"
+      ```
+
+    - set the default pager
+
+      ```bash
+      git config --global core.pager ''
       ```
 
     - use Unix-style line endings (LF) for uploads
